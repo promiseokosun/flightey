@@ -56,12 +56,14 @@ public class SpecimenService implements ISpecimenService {
 	@Override
 	public ISpecimenDAO getSpecimenDAO() {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 	
 	@Override
 	public Iterable<SpecimenDTO> fetchAllSpecimens() throws Exception{
-		return specimenDAO.fetchAll();
+		Iterable<SpecimenDTO> fetchAll = specimenDAO.fetchAll();
+		return fetchAll;
 	}
 
 	@Override
